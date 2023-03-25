@@ -17,7 +17,7 @@ const Register = () => {
 
   const onSubmit = (data) => {
     server
-      .post("http://localhost:3000/register", data)
+      .post("/register", data)
       .then((res) => {
         console.log(res.data);
         setUser(res.data.username);
